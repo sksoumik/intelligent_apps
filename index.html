@@ -1,104 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <title>
-        AI-ML - Home
-    </title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- link with css file -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
 
 </head>
 
 <body>
 
-    <div class="main">
-        <h1>AI/ML Apps</h1>
-        <ul class="cards">
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
-                    <div class="card_content">
-                        <h2 class="card_title">Face Detection</h2>
-                        <p class="card_text">Detect faces from an image, enhance brightness, contrast, and blur.</p>
-                        <button class="btn card_btn"><a
-                                href="https://share.streamlit.io/sksoumik/streamlit_apps/face-detection/app.py"
-                                class="btn btn-primary">Open App</a></button>
+    <div class="container">
+        <div class="d-lg-flex">
 
+            <!-- YOLO-V5 -->
+            <div class="card border-0 me-lg-4 mb-lg-0 mb-4"
+                onclick="openInNewTab('https://share.streamlit.io/sksoumik/streamlit_apps/yolov5/main.py');">
+                <div class="backgroundEffect"></div>
+                <div class="pic"> <img class="" src="static/yolov5.jpeg" alt="">
+                
+                </div>
+                <div class="content">
+                    <p class="h-1 mt-4">Object Detection Using yolov5</p>
+                    <p class="text-muted mt-3">Recognize which types of objects are present in an image and video.</p>
+                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                        <div class="btn btn-primary"
+                            onclick="openInNewTab('https://share.streamlit.io/sksoumik/streamlit_apps/yolov5/main.py');">
+                            Open App<span class="fas fa-arrow-right"></span></div>
+                        <div class="d-flex align-items-center justify-content-center foot">
+                            <!-- github icon with link -->
+                            <a href="
+                            https://github.com/" target="_blank" class="github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </li>
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
-                    <div class="card_content">
-                        <h2 class="card_title">Text Summary Maker</h2>
-                        <p class="card_text">Paste your text, and get the summary.</p>
-                        <button class="btn card_btn"><a
-                                href="https://share.streamlit.io/sksoumik/streamlit_apps/text-summary/text_summarizer.py"
-                                class="btn btn-primary">Open App</a></button>
+            </div>
+
+            <!-- BRAIN MRI-->
+
+            <div class="card border-0 me-lg-4 mb-lg-0 mb-4"
+                onclick="openInNewTab('https://share.streamlit.io/sksoumik/streamlit_apps/brainmri/app.py');">
+                <div class="backgroundEffect"></div>
+                <div class="pic"> <img class="" src="static/brain_mri.png" alt="">
+                    
+                </div>
+                <div class="content">
+                    <p class="h-1 mt-4">Brain MRI Segmentation</p>
+                    <p class="text-muted mt-3">Detect Whether a patient has brain tumor using MRI Scan image of Brain.</p>
+                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                        <div class="btn btn-primary"
+                            onclick="openInNewTab('https://share.streamlit.io/sksoumik/streamlit_apps/brainmri/app.py');">
+                            Open App<span class="fas fa-arrow-right"></span></div>
+                        <div class="d-flex align-items-center justify-content-center foot">
+                            <!-- github icon with link -->
+                            <a href="
+                            https://github.com/" target="_blank" class="github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </li>
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
-                    <div class="card_content">
-                        <h2 class="card_title">Brain MRI segmentation</h2>
-                        <p class="card_text">Upload MRI scan, predicted mask tells whether there is a tumor.</p>
-                        <button class="btn card_btn"><a
-                                href="https://share.streamlit.io/sksoumik/streamlit_apps/brainmri/app.py"
-                                class="btn btn-primary">Open App</a></button>
+            </div>
+
+            <!-- Text Summerizer -->
+
+            <div class="card border-0 me-lg-4 mb-lg-0 mb-4"
+                onclick="openInNewTab('https://share.streamlit.io/sksoumik/streamlit_apps/text-summary/text_summarizer.py');">
+                <div class="backgroundEffect"></div>
+                <div class="pic"> <img class="" src="static/text_summary.png" alt="">
+            
+                </div>
+                <div class="content">
+                    <p class="h-1 mt-4">Text Summerizer</p>
+                    <p class="text-muted mt-3">Copy-Paste any text, and make a summary of your texts.</p>
+                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                        <div class="btn btn-primary"
+                            onclick="openInNewTab('https://share.streamlit.io/sksoumik/streamlit_apps/text-summary/text_summarizer.py');">
+                            Open App<span class="fas fa-arrow-right"></span></div>
+                        <div class="d-flex align-items-center justify-content-center foot">
+                            <!-- github icon with link -->
+                            <a href="
+                            https://github.com/" target="_blank" class="github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </li>
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
-                    <div class="card_content">
-                        <h2 class="card_title">Card Grid Layout</h2>
-                        <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                        <button class="btn card_btn"><a
-                                href="https://share.streamlit.io/sksoumik/streamlit_apps/face-detection/app.py"
-                                class="btn btn-primary">Open App</a></button>
+            </div>
+
+            <!-- Face recognition and enhancement -->
+            <div class="card border-0 me-lg-4 mb-lg-0 mb-4"
+                onclick="openInNewTab('https://share.streamlit.io/sksoumik/streamlit_apps/face-detection/app.py');">
+                <div class="backgroundEffect"></div>
+                <div class="pic"> <img class="" src="static/text_summary.png" alt="">
+            
+                </div>
+                <div class="content">
+                    <p class="h-1 mt-4">Face Recognition and Image Enhancement  </p>
+                    <p class="text-muted mt-3">Copy-Paste any text, and make a summary of your texts.</p>
+                    <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                        <div class="btn btn-primary"
+                            onclick="openInNewTab('https://share.streamlit.io/sksoumik/streamlit_apps/face-detection/app.py');">
+                            Open App<span class="fas fa-arrow-right"></span></div>
+                        <div class="d-flex align-items-center justify-content-center foot">
+                            <!-- github icon with link -->
+                            <a href="
+                            https://github.com/" target="_blank" class="github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </li>
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
-                    <div class="card_content">
-                        <h2 class="card_title">Card Grid Layout</h2>
-                        <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                        <button class="btn card_btn"><a
-                                href="https://share.streamlit.io/sksoumik/streamlit_apps/face-detection/app.py"
-                                class="btn btn-primary">Open App</a></button>
-                    </div>
-                </div>
-            </li>
-            <li class="cards_item">
-                <div class="card">
-                    <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
-                    <div class="card_content">
-                        <h2 class="card_title">Card Grid Layout</h2>
-                        <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-                        <button class="btn card_btn"><a
-                                href="https://share.streamlit.io/sksoumik/streamlit_apps/face-detection/app.py"
-                                class="btn btn-primary">Open App</a></button>
-                    </div>
-                </div>
-            </li>
-        </ul>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
     </div>
+    <!-- add a divider -->
+    <hr>
 
-    <h3 class="made_by">Made with ♡ </h3>
-    <h3 class="made_by"> © Sadman Kabir Soumik </h3>
+    <h6 class="made_by"> © Sadman Kabir Soumik </h6>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function openInNewTab(url) {
+            window.open(url, '_blank').focus();
+        }
+    </script>
+
 
 </body>
+
+
 
 </html>
