@@ -174,3 +174,18 @@ p {
     text-align: center;
     z-index: -1
 }
+
+
+.footer-bottom{
+    clear: both;
+    position: fixed;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .footer-bottom a{
+    margin-left: 10px;
+    size: 90px;
+  }
