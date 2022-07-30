@@ -1,2 +1,2 @@
-# ai-app-landing
-Landing page for AI/ML apps
+# AI/ML apps deployed using Streamlit
+Landing page for AI/ML intelligent apps
