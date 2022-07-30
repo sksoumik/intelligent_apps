@@ -1,2 +1,3 @@
-# AI/ML apps deployed using Streamlit
-Landing page for AI/ML intelligent apps
+Landing page for AI/ML intelligent apps.
+
+Website link: https://sksoumik.github.io/intelligent_apps/
