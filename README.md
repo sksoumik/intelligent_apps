@@ -1,2 +1,3 @@
-# ai-app-landing
-Landing page for AI/ML apps
+Landing page for AI/ML intelligent apps.
+
+### Website link: https://sksoumik.github.io/intelligent_apps/
